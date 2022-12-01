@@ -1,4 +1,4 @@
-name: terraform-fmt
+name: TFLint
 description: Validate terraform files format
 author: Benoit Blais
 
@@ -15,12 +15,16 @@ runs:
       name: Setup TFLint
       with:
         tflint_version: latest
+      shell: bash
 
     - name: Show version
       run: tflint --version
+      shell: bash
 
     - name: Init TFLint
       run: tflint --init
+      shell: bash
 
     - name: Run TFLint
       run: tflint -f compact
+      shell: bash
