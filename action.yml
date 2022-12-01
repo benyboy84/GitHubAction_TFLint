@@ -15,7 +15,6 @@ runs:
       name: Setup TFLint
       with:
         tflint_version: latest
-      shell: bash
 
     - name: Show version
       run: tflint --version
