@@ -55,12 +55,12 @@
 | <a name="input_enabled_for_template_deployment"></a> [enabled\_for\_template\_deployment](#input\_enabled\_for\_template\_deployment) | Boolean flag to specify whether Azure Resource Manager is permitted to retrieve secrets from the key vault. | `bool` | `false` | no |
 | <a name="input_enable_rbac_authorization"></a> [enable\_rbac\_authorization](#input\_enable\_rbac\_authorization) | Boolean flag to specify whether Azure Key Vault uses Role Based Access Control (RBAC) for authorization of data actions. | `bool` | `false` | no |
 | <a name="input_soft_delete_retention_days"></a> [soft\_delete\_retention\_days](#input\_soft\_delete\_retention\_days) |The number of days that items should be retained for once soft-deleted. This value can be between `7` and `90` days. | `number` | `7` | no |
-| <a name="input_certificate_contacts"></a> [certificate\_contacts](#input\_certificate\_contacts) | Contact information to send notifications triggered by certificate lifetime events. | \`<pre>list(object({   <br>    email = string <br>    name  = string<br>    phone = string<br>}))</pre>\` | | no |
-| <a name="input_tags"></a> [tags](#input\_tags) | Tags to apply on Key Vault resource. Defaults to empty. | map(string) | `false` | no |
-| <a name="input_admin_objects_ids"></a> [admin\_objects\_ids](#input\_admin\_objects\_ids) | IDs of the objects that can do all operations on all keys, secrets and certificates. Defaults to empty. | `bool` | `false` | no |
-| <a name="input_reader_objects_ids"></a> [reader\_objects\_ids](#input\_reader\_objects\_ids) | IDs of the objects that can read all keys, secrets and certificates. Defaults to empty. | `bool` | `false` | no |
-| <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | A container that holds related resources for an Azure solution. | `bool` | `false` | no |
-| <a name="input_private_endpoint_subnet"></a> [private\_endpoint\_subnet](#input\_private\_endpoint\_subnet) | Network information required to create a private endpoint. | `bool` | `false` | no |
+| <a name="input_certificate_contacts"></a> [certificate\_contacts](#input\_certificate\_contacts) | Contact information to send notifications triggered by certificate lifetime events. | <pre>list(object({   <br>    email = string <br>    name  = string<br>    phone = string<br>}))</pre> | `[]` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Tags to apply on Key Vault resource. Defaults to empty. | `map(string)` | `{}` | no |
+| <a name="input_admin_objects_ids"></a> [admin\_objects\_ids](#input\_admin\_objects\_ids) | IDs of the objects that can do all operations on all keys, secrets and certificates. Defaults to empty. | `list(string)` | `[]` | no |
+| <a name="input_reader_objects_ids"></a> [reader\_objects\_ids](#input\_reader\_objects\_ids) | IDs of the objects that can read all keys, secrets and certificates. Defaults to empty. | `list(string)` | `[]` | no |
+| <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | A container that holds related resources for an Azure solution. | <pre>object({   <br>    name     = string <br>    location = string<br>    tags     = string<br>    create   = string<br>})</pre> | | yes |
+| <a name="input_private_endpoint_subnet"></a> [private\_endpoint\_subnet](#input\_private\_endpoint\_subnet) | Network information required to create a private endpoint. | <pre>object({   <br>    virtual_network_name = string <br>    subnet_name          = string<br>    resource_group_name  = string<br>})</pre> | | yes |
 
 ## Outputs
 
