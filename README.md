@@ -66,16 +66,6 @@
 
 | Name | Description |
 |------|-------------|
-| <a name="output_azurerm_network_security_group_id"></a> [azurerm\_network\_security\_group\_id](#output\_azurerm\_network\_security\_group\_id) | Network Security Group Id |
-
-## Specifications & Prerequisites
-
-* Any required access?
-* Any external tool used?
-* Any steps needed to be done first?
-* Any remarks for the one who will use this module
-
-## Links
-* Links to confluence page
-* Links to External documentation?
-* Links to Samples used?
+| <a name="output_key_vault_id"></a> [key\_vault\_id](#output\_key\_vault\_id) | The ID of the Key Vault. |
+| <a name="output_key_vault_name"></a> [key\_vault\_name](#output\_key\_vault\_name) | Name of key vault created. |
+| <a name="output_key_vault_uri"></a> [key\_vault\_uri](#output\_key\_vault\_uri) | The URI of the Key Vault, used for performing operations on keys and secrets. |
