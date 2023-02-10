@@ -7,17 +7,17 @@
 ## Usage
 
 1. The module deploys an Azure Key Vault
-2. Configure access to the Key Vault.
+2. Configure access to the Key Vault. The object who create the Key Vault will be assign in with admin. 
 - If `enable_rbac_authorization` is set to `true`, it will assign objects ID to RBAC roles.
   | Input | Role(s) |
   |-------|---------|
   | reader_objects_ids | Key Vault Administrator |
   | admin_objects_ids | Key Vault Secrets User & Key Vault Reader |
-3. If `enable_rbac_authorization` is set to `false`, it will create access policy.
-  | Input | Key Permissions | Secret Permissions | Certificate Permissions |
-  |-------|-----------------|--------------------|-------------------------|
-  | reader_objects_ids | Get<br>List | t | t |
-  | admin_objects_ids | Key Vault Secrets User & Key Vault Reader | t | t |
+- If `enable_rbac_authorization` is set to `false`, it will create access policy.
+| Input | Key Permissions | Secret Permissions | Certificate Permissions |
+|-------|-----------------|--------------------|-------------------------|
+| reader_objects_ids | Get<br>List | t | t |
+| admin_objects_ids | Key Vault Secrets User & Key Vault Reader | t | t |
 
 ## Requirements
 
