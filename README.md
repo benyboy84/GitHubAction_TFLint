@@ -16,8 +16,8 @@
 3. If `enable_rbac_authorization` is set to `false`, it will create access policy.
   | Input | Key Permissions | Secret Permissions | Certificate Permissions |
   |-------|-----------------|--------------------|-------------------------|
-  | reader_objects_ids | Get \n List |
-  | admin_objects_ids | Key Vault Secrets User & Key Vault Reader |
+  | reader_objects_ids | Get \n List | | |
+  | admin_objects_ids | Key Vault Secrets User & Key Vault Reader | | |
 
 ## Requirements
 
