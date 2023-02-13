@@ -19,7 +19,7 @@
   | Input | Key Permissions | Secret Permissions | Certificate Permissions |
   |-------|-----------------|--------------------|-------------------------|
   | reader_objects_ids | Get<br>List | Get<br>List | Get<br>List |
-  | admin_objects_ids | Backup<br>Create<br>Decrypt<br>Delete<br>Encrypt<br>Get<br>Import<br>List<br>Purge<br>Recover<br>Restore<br>Sign<br>UnwrapKey<br>Update<br>Verify<br>WrapKey<br> | t | t |
+  | admin_objects_ids | Backup<br>Create<br>Decrypt<br>Delete<br>Encrypt<br>Get<br>Import<br>List<br>Purge<br>Recover<br>Restore<br>Sign<br>UnwrapKey<br>Update<br>Verify<br>WrapKey<br> | Backup<br>Delete<br>Get<br>List<br>Purge<br>Recover<br>Restore<br>Set | Backup<br>Create<br>Delete<br>DeleteIssuers<br>Get<br>GetIssuers<br>Import<br>List<br>ListIssuers<br>ManageContacts<br>ManageIssuers<br>Purge<br>Recover<br>Restore<br>SetIssuers<br>Update |
 
 ## Requirements
 
